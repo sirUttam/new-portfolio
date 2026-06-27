@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #0D1117;
+  color: #E6EDF3;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+body {
+  min-height: 100vh;
+  background: #0D1117;
+  color: #E6EDF3;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(201, 162, 39, 0.25);
+  color: #ffffff;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(201, 162, 39, 0.8);
+  outline-offset: 3px;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.section-surface {
+  @apply bg-surface border border-[rgba(240,180,80,0.12)] shadow-soft rounded-3xl;
+}
+
+.card-focus:hover,
+.card-focus:focus-within {
+  @apply border-[rgba(201,162,39,0.18)] shadow-glow;
+}
