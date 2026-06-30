@@ -16,7 +16,7 @@ export default function ContactSection() {
     <section id="contact" className="mt-24 pb-12">
       <SectionHeading
         title="Let's Connect"
-        description="Reach out with a project inquiry, collaboration idea, or engineering conversation."
+        description="Let's connect and build something awesome together."
       />
 
       <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
@@ -25,9 +25,9 @@ export default function ContactSection() {
         <div className="section-surface flex flex-col justify-between p-6">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-muted">Contact</p>
-            <h3 className="mt-4 text-2xl font-semibold text-text">Available for new collaborations</h3>
+            <h3 className="mt-4 text-2xl font-semibold text-text">Open to new opportunities</h3>
             <p className="mt-4 text-sm leading-7 text-muted">
-              I am focused on backend systems, AI infrastructure, and developer tools with strong performance and elegant execution.
+              Interested in backend development, data analysis, or machine learning? Let's connect and build something meaningful.
             </p>
           </div>
 

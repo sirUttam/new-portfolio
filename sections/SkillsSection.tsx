@@ -18,7 +18,7 @@ export default function SkillsSection() {
     <section id="skills" className="mt-24">
       <SectionHeading
         title="Skills"
-        description="A curated set of tools and systems for backend, data, tooling, and web delivery."
+        description="Technologies I've learned and use to build practical, real-world projects."
       />
 
       <motion.div

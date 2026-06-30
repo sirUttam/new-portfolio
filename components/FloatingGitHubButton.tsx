@@ -7,7 +7,7 @@ type FloatingGitHubButtonProps = {
   href?: string;
 };
 
-export default function FloatingGitHubButton({ href = 'https://github.com' }: FloatingGitHubButtonProps) {
+export default function FloatingGitHubButton({ href = 'https://github.com/sirUttam/' }: FloatingGitHubButtonProps) {
   return (
     <motion.a
       href={href}

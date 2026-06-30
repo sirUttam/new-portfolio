@@ -19,7 +19,7 @@ export default function HomePage() {
       <div className="container mt-12">
         <Footer />
       </div>
-      <FloatingGitHubButton href="https://github.com/username" />
+      <FloatingGitHubButton href="https://github.com/sirUttam" />
     </>
   );
 }

@@ -47,7 +47,7 @@ export default function ContactForm() {
           rows={6}
           required
           className="w-full rounded-3xl border border-[rgba(255,255,255,0.08)] bg-[#101520] px-4 py-4 text-text outline-none transition focus:border-accent"
-          placeholder="Share a project idea or collaboration inquiry"
+          placeholder="Say hello ..."
         />
       </label>
 
@@ -58,10 +58,8 @@ export default function ContactForm() {
         Send message
       </button>
 
-      {status ? (
+      {status && (
         <p className="mt-4 text-sm text-text/80">{status}</p>
-      ) : (
-        <p className="mt-4 text-sm text-muted">This form is frontend only and ready for email integration when needed.</p>
       )}
     </form>
   );

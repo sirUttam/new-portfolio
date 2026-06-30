@@ -9,7 +9,7 @@ export default function ProjectsSection() {
     <section id="projects" className="mt-24">
       <SectionHeading
         title="Projects"
-        description="Selected case studies and polished work designed for engineering-led audiences."
+        description="A collection of projects showcasing my backend, data analysis, and machine learning skills."
       />
 
       <motion.div

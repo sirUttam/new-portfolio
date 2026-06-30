@@ -24,14 +24,44 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 px-4 py-4 backdrop-blur-sm">
       <div className="container relative flex items-center justify-between">
         <motion.a
-          href="#hero"
-          aria-label="Brand home"
-          whileHover={{ rotate: 180 }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="text-2xl font-semibold tracking-[0.35em] text-text"
-        >
-          U
-        </motion.a>
+  href="#hero"
+  aria-label="Brand home"
+  initial="rest"
+  whileHover="hover"
+  className="relative flex h-10 w-10 items-center justify-center overflow-visible"
+>
+  {/* U */}
+  <motion.span
+    variants={{
+      rest: { rotate: 0 },
+      hover: { rotate: 180 },
+    }}
+    transition={{ duration: 0.5, ease: 'easeOut' }}
+    className="text-2xl font-semibold tracking-[0.35em] text-text"
+  >
+    U
+  </motion.span>
+
+  {/* Middle bar */}
+  <motion.span
+    variants={{
+      rest: {
+        opacity: 0,
+        scaleX: 0,
+      },
+      hover: {
+        opacity: 1,
+        scaleX: 1,
+      },
+    }}
+    transition={{
+      duration: 0.2,
+      delay: 0.2,
+      ease: 'easeOut',
+    }}
+    className="absolute h-[3px] w-3 rounded-full bg-accent"
+  />
+</motion.a>
 
         <nav className="relative flex items-center justify-center">
           <div className={`rounded-full border bg-[rgba(255,255,255,0.02)] px-4 py-2 shadow-soft backdrop-blur-md transition-colors duration-300 ${scrolled ? 'border-[rgba(201,162,39,0.24)]' : 'border-[rgba(255,255,255,0.08)]'}`}>
